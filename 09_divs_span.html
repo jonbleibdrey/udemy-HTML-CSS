@@ -5,9 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>div, span, id and class</title>
+    <style>
+      .card {
+        border: 1px solid #ccc;
+        background: #f4f4f4;
+        padding: 20px;
+        margin-bottom: 10px;
+      }
+
+      .enhance {
+        color: yellow;
+        background-color: black;
+      }
+    </style>
   </head>
   <body>
-    <div id="main-header">
+    <!-- differnce between id and class is that id you only use onces and class you can use mutiple -->
+
+    <div id="main-header" class="card">
       <h1>My website</h1>
       <p>A site about Me</p>
     </div>
@@ -16,23 +31,29 @@
       <li><a href="#"> About</a></li>
       <li><a href="#"> Contact</a></li>
     </ul>
-    <div id="about">
+    <div id="about" class="card">
       <h3>About</h3>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab neque id
         dicta aspernatur quisquam, ipsa illum totam rerum. Dicta nobis veniam
-        repudiandae magnam neque, provident sapiente quaerat error officia odit
-        ex, veritatis nisi atque nesciunt temporibus voluptas, eius soluta
-        beatae iusto adipisci deserunt eum porro. Rerum ex perspiciatis quidem
-        ipsum, odit modi alias culpa, corrupti perferendis delectus iste porro
-        accusamus facere! Magni provident voluptatibus, quidem quia commodi
-        eveniet expedita! Ipsum iusto molestias veritatis molestiae accusantium,
-        ex perferendis facilis ipsam tempore placeat sapiente non voluptatum
-        nisi maxime? Quasi, harum sint laudantium nemo repudiandae, fugit
-        ratione nihil ipsam asperiores labore deleniti omnis.
+        repudiandae magnam neque,
+
+        <!-- spans are good when you want inline text edits -->
+        <span class="enhance">
+          veritatis nisi atque nesciunt temporibus voluptas, eius soluta
+        </span>
+        provident sapiente quaerat error officia odit
+        <!-- spans are good when you want inline text edits -->
+        ex, beatae iusto adipisci deserunt eum porro. Rerum ex perspiciatis
+        quidem ipsum, odit modi alias culpa, corrupti perferendis delectus iste
+        porro accusamus facere! Magni provident voluptatibus, quidem quia
+        commodi eveniet expedita! Ipsum iusto molestias veritatis molestiae
+        accusantium, ex perferendis facilis ipsam tempore placeat sapiente non
+        voluptatum nisi maxime? Quasi, harum sint laudantium nemo repudiandae,
+        fugit ratione nihil ipsam asperiores labore deleniti omnis.
       </p>
     </div>
-    <div id="contact">
+    <div id="contact" class="card">
       <h3>Contact Me</h3>
       <ul>
         <li>Adress: 185 mommas house, Boston MA</li>
