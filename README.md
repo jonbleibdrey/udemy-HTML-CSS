@@ -1,4 +1,4 @@
-# HTML-CSS
+# Everything you need to know about: HTML-CSS
 
 Hot keys and tips:
 
