@@ -12,4 +12,6 @@ greater than and less than symbol - &gt; &lt; (look at entities file for more)
 
 <!-- website sources -->
 
+hex-decimal site: https://www.color-hex.com & https://htmlcolorcodes.com
+
 images: https://source.unsplash.com/
