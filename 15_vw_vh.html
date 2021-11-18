@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vh & vw unites</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      header {
+        /* to have a background that covers your entire page no matter what */
+        background: #333 url("https://source.unsplash.com/daily") no-repeat
+          center center/cover;
+        color: white;
+        height: 100vh;
+        /* width: 50vw; */
+        text-align: center;
+        padding: 2rem;
+        padding-top: 25rem;
+      }
+
+      header h1 {
+        /* default root size is 16px remeber then when you do 3rem it triples so 16 * 3 = 48px*/
+        font-size: 3rem;
+      }
+
+      header p {
+        margin: 1rem 0;
+      }
+
+      .btn {
+        /* display links are by default inline */
+        display: inline-block;
+        text-decoration: none;
+        background: #f4f4f4;
+        color: #333;
+        padding: 0.75rem 2rem;
+      }
+
+      section{
+        padding: 2rem;
+      }
+
+      @media(max-height: 450px){
+        header{
+          padding-top: 5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Vh & Vw viewport is the whole browser body example: their are always 100vh or vw slices and when you say i want 50vw or vh it takes up 50 percent or 50 slices -->
+    <header>
+      <h1>Welcome To Our Website</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+        tenetur ipsum, sequi placeat aliquam fugiat.
+      </p>
+      <a href="#" class="btn">Find out more</a>
+    </header>
+
+    <section>
+      <h3>About the company</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel animi
+        similique magni provident officiis a laudantium repellat tempora,
+        mollitia porro eligendi amet, aspernatur ratione ut.
+      </p>
+    </section>
+  </body>
+</html>
