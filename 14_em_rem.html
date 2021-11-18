@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Em & Rem unites</title>
+    <style>
+      /* standard font size is 16 px and headers are 18px */
+      /* Dont use em its difficult */
+      /* #box-1{
+        font-size: 20px;
+      }
+
+      #box-1 p{
+        font-size: 1.5em;
+        padding: 1em;
+      }
+
+      #box-1 ul{
+        font-size: 1.2em;
+      }
+       */
+
+       /* if we wanted to change the standard size of 16px we do this down below */
+      html{
+        font-size: 10px;
+      }
+
+       /* rem is added to root HTML element */
+       #box-2 h3{
+         font-size: 2rem;
+       }
+
+       #box-2 p{
+         font-size: 1.6rem;
+         line-height: 1.7rem;
+       }
+    </style>
+  </head>
+  <body>
+    <div id="box-1">
+      <h3>Box one</h3>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis
+        ipsa nulla ipsam deleniti porro facere suscipit obcaecati eos distinctio
+        earum?
+      </p>
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3
+          <ul>
+            <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+        </ul>
+        </li>
+        <li>4</li>
+      </ul>
+    <div id="box-2">
+      <h3>Box two</h3>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis
+        ipsa nulla ipsam deleniti porro facere suscipit obcaecati eos distinctio
+        earum?
+      </p>
+  </body>
+</html>
