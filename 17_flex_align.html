@@ -15,26 +15,31 @@
     }
 
     .flex-container{
+      background-color: black;
+      /* vh - is basically screen size so 50 out of 100vh */
+      height: 50vh;
       display: flex;
       /*  if you want your divs diagnole or not */
       /* flex-direction: row-reverse; or column */
       /* if you want your divs to wrap around use flex wrap  */
       /* flex-wrap: wrap; */
-    }
+      
+      flex-direction: row;
+      /* when doing column direction the cross axis is the horizontal, and up and down is the main axis  */
 
-    .item-1{
-      /* this makes the item stay the same size as you adjust screen */
-      flex-shrink: 0;
-    }
-    .item-2{
-      /* this makes it so it fills the rest of the screen but, just that one item*/
-      flex-grow: 1;
-      /* basis is used for setting the width */
-      flex-basis: 0;
-    }
-    .item-3{
-      flex-grow: 2;
-      flex-basis: 0;
+      justify-content: center;
+      /* space around,space-between is for justify content  */
+      
+      align-items: center;
+      /* stretch- will fill the whole screen  */
+      /* align-items: stretch; */
+      /* flex-direction: row; */
+      /* when in the row direction, horizontal is the main acess, and the going down is the cross axis. */
+      /* align items - goes in the middle of the cross axis */
+      /* align-items: center; */
+      /* flex-end - will drop the whole row down to the botom of the height box. */
+      /* align-items: flex-end; */
+      
     }
 
     /* to get all the items */
@@ -48,8 +53,20 @@
       width: 200px;
       /* if you dont want to use shrink or basis, just use flex like this */
       /*   grow,shrink,basis */
-      flex: 1;
+      /* flex: 1; */
+      
     }
+
+    /* below is if you want to move each item individually, possibly cool new navbar design */
+    /* .item-1{
+      align-self: flex-end;
+    }
+    .item-2{
+      align-self: flex-start;
+    }
+    .item-4{
+      align-self: flex-start;
+    } */
 
   </style>
 </head>
